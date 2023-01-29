@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>Penis Gun</name> 
+  <author>DumbCow</author>
+  <packageId>DumbCowGames.PenisGun</packageId>
+  <supportedVersions> 
+    <li>1.4</li>
+  </supportedVersions>
+  <description>My first ever mod, made for fun. The gun is craftable after researching gunsmithing.</description>
+</ModMetaData>

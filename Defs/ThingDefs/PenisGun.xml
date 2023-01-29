@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>DC_Penis_Gun</defName>
+    <label>Penis Gun</label>
+    <description>A scientific replica of an infamous weapon on every men. Long warmup time but deadly.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Penis</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <statBases>
+      <WorkToMake>300</WorkToMake>
+      <Mass>0.5</Mass>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+	<WoodLog>20</WoodLog>
+      <Steel>5</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>CumShot</defaultProjectile>
+        <warmupTime>10</warmupTime>
+        <range>10</range>
+        <soundCast>Hive_Spawn</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>tip</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>0.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>CumShot</defName>
+    <label>CumSho</label>
+    <thingClass>PenisGun.CumShot</thingClass>
+    <graphicData>
+      <texPath>Things/Cum</texPath>
+      <color>(225, 225, 225, 180)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Stun</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>30</speed>
+    </projectile>
+	<modExtensions>
+    <li Class="PenisGun.ModExtension_CumShot">
+        <addHediffChance>1</addHediffChance>
+        <hediffToAdd>Pregnant</hediffToAdd>
+    </li>
+  </modExtensions>
+  </ThingDef>
+</Defs>
