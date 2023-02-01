@@ -13,9 +13,4 @@ namespace PenisGun
         public float addHediffChance = 0.5f;
         public HediffDef hediffToAdd;
     }
-
-    //public class ModExtension_PenisGun : DefModExtension
-    //{
-        
-    //}
 }
