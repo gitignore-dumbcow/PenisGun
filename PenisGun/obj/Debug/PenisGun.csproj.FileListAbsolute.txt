@@ -2,3 +2,4 @@ D:\Steam\steamapps\common\RimWorld\Mods\PenisGun\Assemblies\PenisGun.dll
 D:\Steam\steamapps\common\RimWorld\Mods\PenisGun\PenisGun\obj\Debug\PenisGun.csproj.AssemblyReference.cache
 D:\Steam\steamapps\common\RimWorld\Mods\PenisGun\PenisGun\obj\Debug\PenisGun.csproj.CoreCompileInputs.cache
 D:\Steam\steamapps\common\RimWorld\Mods\PenisGun\PenisGun\obj\Debug\PenisGun.dll
+D:\Steam\steamapps\common\RimWorld\Mods\PenisGun\PenisGun\obj\Debug\PenisGun.csproj.CopyComplete
