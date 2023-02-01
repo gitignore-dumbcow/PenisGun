@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThoughtDef>
+		<defName>StinkyWet</defName>
+		<durationDays>0.3</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>stinky wet</label>
+				<description>A huge load was shot on me, now I'm all wet, and stinky.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ImpregnantJoy</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>impregnanted someone</label>
+				<description>I've just made someone pregnant, I feel like a hero today.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

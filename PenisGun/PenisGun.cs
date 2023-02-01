@@ -12,5 +12,7 @@ namespace PenisGun
     {
         public float addHediffChance = 0.5f;
         public HediffDef hediffToAdd;
+        public ThoughtDef shooterThought;
+        public ThoughtDef victimThought;
     }
 }

@@ -46,7 +46,6 @@
         <warmupTime>10</warmupTime>
         <range>10</range>
         <soundCast>Hive_Spawn</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>0</muzzleFlashScale>
       </li>
     </verbs>
@@ -86,6 +85,8 @@
     <li Class="PenisGun.ModExtension_CumShot">
         <addHediffChance>1</addHediffChance>
         <hediffToAdd>Pregnant</hediffToAdd>
+		<shooterThought>ImpregnantJoy</shooterThought>
+		<victimThought>StinkyWet</victimThought>
     </li>
   </modExtensions>
   </ThingDef>

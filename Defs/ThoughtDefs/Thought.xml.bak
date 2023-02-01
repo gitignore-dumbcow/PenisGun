@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ThoughtDef>
+	<defName>StinkyWet</defName>
+	<durationDays>0.3</durationDays>
+	<stackLimit>1</stackLimit>
+	<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+	<stages>
+		<li>
+			<label>stinky wet</label>
+			<description>A huge load was shot on me, now I'm all wet, and stinky.</description>
+			<baseMoodEffect>-8</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>

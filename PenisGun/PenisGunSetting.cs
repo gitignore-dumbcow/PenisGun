@@ -48,7 +48,15 @@ namespace PenisGun
         }
 
         //Variables
-        public bool useNSFWContent = true;
+        public static bool useNSFWContent = true;
 
+
+        public static void DefLoaded()
+        {
+            string lable = useNSFWContent ? "Penis Gun" : "Artificial Assimilator";
+
+            DefDatabase<ThingDef>.GetNamed("DC_Penis_Gun").label = lable;
+            
+        }
     }
 }
