@@ -8,12 +8,14 @@ using RimWorld;
 
 namespace PenisGun
 {
-    public class ModExtension_PenisGun : DefModExtension
+    public class ModExtension_CumShot : DefModExtension
     {
         public float addHediffChance = 0.5f;
         public HediffDef hediffToAdd;
-        public ThoughtDef specialThought;
-        public ThoughtDef basicThought;
-        public ThoughtDef shooterThought;
     }
+
+    //public class ModExtension_PenisGun : DefModExtension
+    //{
+        
+    //}
 }

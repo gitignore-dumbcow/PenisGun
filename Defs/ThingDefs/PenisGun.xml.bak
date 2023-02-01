@@ -3,12 +3,11 @@
 <Defs>
 	  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>DC_Penis_Gun</defName>
-	<thingClass>PenisGun.Penis</thingClass>
     <label>Penis Gun</label>
     <description>A scientific replica of an infamous weapon on every men. Long warmup time but deadly.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Penis_A</texPath>
+      <texPath>Things/Penis</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
@@ -47,6 +46,7 @@
         <warmupTime>10</warmupTime>
         <range>10</range>
         <soundCast>Hive_Spawn</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>0</muzzleFlashScale>
       </li>
     </verbs>
@@ -67,7 +67,7 @@
   
   <ThingDef ParentName="BaseBullet">
     <defName>CumShot</defName>
-    <label>CumShot</label>
+    <label>CumSho</label>
     <thingClass>PenisGun.CumShot</thingClass>
     <graphicData>
       <texPath>Things/Cum</texPath>
@@ -83,12 +83,9 @@
       <speed>30</speed>
     </projectile>
 	<modExtensions>
-    <li Class="PenisGun.ModExtension_PenisGun">
+    <li Class="PenisGun.ModExtension_CumShot">
         <addHediffChance>1</addHediffChance>
         <hediffToAdd>Pregnant</hediffToAdd>
-		<specialThought>CumCoverage</specialThought>
-		<basicThought>SoakingWet</basicThought>
-		<shooterThought>Impregnant</shooterThought>
     </li>
   </modExtensions>
   </ThingDef>
