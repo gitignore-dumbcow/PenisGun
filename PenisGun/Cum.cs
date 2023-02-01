@@ -10,13 +10,19 @@ namespace PenisGun
 {
     public class CumShot : Bullet
     {
-        public ModExtension_CumShot Extenstion => def.GetModExtension<ModExtension_CumShot>();
+        public ModExtension_PenisGun Extenstion => def.GetModExtension<ModExtension_PenisGun>();
 
         HediffDef hediffType;
+        ThoughtDef specialThought;
+        ThoughtDef basicThought;
+        ThoughtDef shooterThought;
 
         protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
             hediffType = Extenstion.hediffToAdd;
+            specialThought = Extenstion.specialThought;
+            basicThought = Extenstion.basicThought;
+            shooterThought = Extenstion.shooterThought;
 
             base.Impact(hitThing, blockedByShield);
 
@@ -27,15 +33,23 @@ namespace PenisGun
                 {
                     Hediff pawnAvailable = pawn.health?.hediffSet?.GetFirstHediffOfDef(Extenstion.hediffToAdd);
 
-
                     float randomSeverity = Rand.Range(0.15f, 0.30f);
                     if (pawnAvailable == null)
                     {
+                        //Create thought
+                        pawn.needs.mood.thoughts.memories.TryGainMemory(specialThought);
+                        pawn.needs.mood.thoughts.memories.TryGainMemory(basicThought);
+
+                        Pawn shooter = launcher as Pawn;
+                        shooter.needs.mood.thoughts.memories.TryGainMemory(shooterThought);
+
+                        //Create HeDiff
                         Hediff hediff = HediffMaker.MakeHediff(hediffType, pawn);
                         hediff.Severity = randomSeverity;
                         pawn.health.AddHediff(hediff);
                     }
-                    else return;
+
+                    return;
                 }
             }
         }

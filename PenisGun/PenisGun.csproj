@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cum.cs" />
+    <Compile Include="ModSettings.cs" />
     <Compile Include="PenisGun.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

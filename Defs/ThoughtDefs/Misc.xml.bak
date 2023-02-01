@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>CumCoverage</defName>
+		<durationDays>0.1</durationDays>
+		<stackLimit>1</stackLimit>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+		  <li>
+			<label>Covered in semen</label>
+			<description>That was a huge load, now I'm all sticky and soaked.</description>
+			<baseMoodEffect>-8</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	  
+</Defs>
